@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Staatliches&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="flags" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.1.5/css/flag-icons.min.css" integrity="sha512-UwbBNAFoECXUPeDhlKR3zzWU3j8ddKIQQsDOsKhXQGdiB5i3IHEXr9kXx82+gaHigbNKbTDp3VY/G6gZqva6ZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Phat News</title>
+</head>
+<body>
+
+    <header>
+       
+        
+    <center><h1 class="title is-1">Welcome to Phat News!</h1></center>
+       
+        <nav class="navigation">
+            <a class="title is-2" href="./index.html">Home</a>
+        </nav>
+  
+    </header>
+
+
+    <!-- start modal CTA user enters name and selects country to view recent news -->
+     <div id="modal-cta" class="modal is-large is-active">
+        <div class="container-fluid box">
+            <h1 class="">Welcome to Phat News</h1>
+            <form class="field" name="userInfo"> 
+
+                <!--start field for user name -->
+                <div class="field">
+                    <label class="label" for="userName">Enter your username!</label>
+                    <div class="control">
+                        <input class="input is-rounded" type="text" id="userName" placeholder="Enter username">
+                    </div>
+                </div> 
+
+                <!-- start dropdown for country -->
+                <div class="field">
+                    <label class="label" for="countryName">Please choose a Country!</label>
+                    <div class="control">
+                        <select name="countryName" id="countryName"></select>
+                    </div>
+                </div> 
+
+                <input id="loginBtn" type="submit" class="button is-primary is-outlined">
+            </form> 
+        </div>
+    </div> --> 
+
+    <!-- country news search function -->
+    <center>
+    <div class="cta">
+        <br>
+        <h2 class="title is-2">From what country's sports news would you like to read?</h2><br>
+        <form id="user-form" class="form-group">
+            <section>
+              <h3 class="cta-header title is-3">Search for a Country you would like to see news from</h3><br>
+              <label for="country" class="title is-5">Enter a country:</label>
+              <input name="country" type="text"  id="country" class="form-input" autofocus="true" placeholder="Country name"/>
+              <button class="submit">Submit</button><br><br>
+            </section><br>
+
+        </form>
+
+
+    <!-- world news container -->
+    <center>       
+    <div id="newsContainer" class="hide">    
+        <h2 class="title is-3">Sports Around The Globe</h2>
+        <section id="newsFeed" class="container"></section>
+    </div>
+    </center>   
+
+    <!-- daily dose of NFL -->
+    <center>
+    <div id="holder">
+        <div>
+
+            <h2 class="title is-3"> 
+            Daily Dose of NFL
+            </h2>
+
+            <section class="container">
+                <div>
+                <article id="first"></article> 
+                </div>
+            </section>
+
+                <section class="container">
+                <div>
+                <article id="second"></article>  
+                </div> 
+            </section>
+
+            <section class="container">
+                <div>
+                <article id="third"></article>  
+                </div>              
+            </section>
+
+        </div>
+    </center>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
